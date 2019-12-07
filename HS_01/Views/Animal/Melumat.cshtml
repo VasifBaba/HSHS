@@ -11,10 +11,10 @@
         <div class="row bg-light">
             <div class="col-md-4 p-5">
                 <div class="card h-100">
-                    <img src="@Model.aniDetail.AnimalPhotoes" class="card-img-top">
+                    <img src="@Model.elanFirst.Animal.AnimalPhotoes" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title text-center">
-                            <a href="@Url.Action("Melumat","Animal")" class="text-success">@Model.aniDetail.Name</a>
+                            <a href="@Url.Action("Melumat","Animal")" class="text-success">@Model.elanFirst.Animal.Name</a>
                         </h4>
                         <hr />
                         <div class="nav d-flex">
@@ -35,13 +35,13 @@
                 <div class="card h-100 p-3">
                     <h3 class="text-center">Məlumat</h3>
                     <hr />
-                    <p class="fontsize">@Model.aniDetail.Description</p>
+                    <p class="fontsize">@Model.elanFirst.Animal.Description</p>
                     <br />
                     <br />
                     <hr />
-                    <h6>Satır : @Model.aniDetail.Name</h6>
+                    <h6>Satır : @Model.elanFirst.User.Name.</h6>
                     <hr />
-                    <h6>Mobil nömrə : 077 753 57 91</h6>
+                    <h6>Mobil nömrə : @Model.elanFirst.User.Phone</h6>
                     <hr />
                 </div>
             </div>

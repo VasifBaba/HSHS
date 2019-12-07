@@ -14,7 +14,7 @@ namespace HS_01.ViewModels
         public List<City> cty { get; set; }
         public User uss { get; set; }
         public List<Banner> ban { get; set; }
-
+        public Elanlar elanFirst { get; set; }
         public IEnumerable<Animal> anima { get; set; }
    
     }

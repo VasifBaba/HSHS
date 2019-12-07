@@ -16,15 +16,15 @@ namespace HS_01.Controllers
         {
             if (id == null) return HttpNotFound();
 
-            Animal ani = db.Animals.Find(id);
+            Elanlar ani = db.Elanlars.Find(id);
 
             if (ani == null) return HttpNotFound();
 
             var DefaultModel = new DefaultVIiewModel
             {
-                aniDetail = ani,
+                elanFirst = ani,
                
-                anima = db.Animals.Where(a => a.CategoryID == ani.CategoryID)
+                anima = db.Animals.Where(a => a.CategoryID == ani.Animal.CategoryID)
             };
             return View(DefaultModel);
 

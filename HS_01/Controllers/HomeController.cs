@@ -68,7 +68,8 @@ namespace HS_01.Controllers
             {
                 ctg = db.Categories.ToList(),
                 ani = db.Animals.ToList(),
-                cty = db.Cities.ToList()
+                cty = db.Cities.ToList(),
+
             };
             Animal newAnimal = db.Animals.Add(ani);
             //db.SaveChanges();
